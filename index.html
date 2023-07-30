@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Article</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container mb-5">
+      <div class="row mt-5" id="article">
+        <div class="col-lg-6">
+          <h3 class="mb-5">Write Content For Article</h3>
+          <input v-on:input="SetContent" type="text">
+        </div>
+        <div class="col-lg-6 article">
+          <header>
+            <h1 class="fw-bolder">World News-Herald</h1>
+          </header>
+          <nav class="d-flex justify-content-between p-2">
+            <span>Issue nr. 17, September </span>
+            <span>Weekly News</span>
+          </nav>
+          <h1 class="heading">FIRST SUCCESSFUL AIRPLANE</h1>
+          <div class="quote mb-2">"History made today"</div>
+          <div class=" mb-5">Article Content : </div>
+          <article  v-html="article">
+          </article>
+          <img src="images/airplane.jpg" class="image">
+        </div>
+      </div>
+    </div>
+    <section >
+
+    </section>
+  </body>
+</html>
