@@ -26,7 +26,9 @@
       <div class="row mt-5" id="article">
         <div class="col-lg-6">
           <h3 class="mb-5">Write Content For Article</h3>
-          <input v-on:input="SetContent" type="text">
+<!--          <input v-on:input="SetContent" type="text">-->
+          <textarea @input="updateTheVariable($event.target.value)"></textarea>
+
         </div>
         <div class="col-lg-6 article">
           <header>

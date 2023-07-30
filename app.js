@@ -8,7 +8,10 @@ const app = Vue.createApp({
   methods:{
     SetContent(){
     this.article=event.target.value;
-    }
+    },
+    updateTheVariable(value){
+         this.article = value
+        }
   }
 });
 
